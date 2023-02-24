@@ -1,0 +1,145 @@
+
+.grid {
+    
+    display: grid;
+    
+    grid-template-areas: 
+    "header header header"
+    "productos productos productos"
+    "servicios servicios servicios"
+    "footer footer footer";
+   
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+
+    grid-column-gap: 10px ;
+    grid-row-gap: 15px ;
+
+    height: 100vh; /*viewport height(altura) viewport width(anchura)*/
+    /*width: 100vw; viewport width(anchura)*/
+   
+}
+
+
+.border{ 
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    
+  
+}
+
+
+
+#productos{
+    grid-area: productos;
+}
+
+#servicios{
+    grid-area: servicios;
+}
+footer{
+    grid-area: footer;
+}
+
+body{
+    background-color: black;
+    
+}
+
+
+img{
+    margin: 3%;
+    
+}
+
+
+
+
+h1 {
+   
+    
+    position: relative;
+    top: 20px;
+    left: 500px;
+    
+    
+    
+
+}
+
+.caja5{
+    
+    bottom: 200px;
+    left: 0px;
+    display: inline-block;
+    margin: 0%;
+}
+.img-fluid{
+    opacity: 50%;
+
+}
+
+
+
+
+
+
+
+*{
+
+    background-color: black;
+    margin: 10px;
+    color: gray;
+   
+    
+   
+    
+    
+    
+    
+    
+
+}
+
+
+@media (max-width: 480px) {
+    .img-fluid{
+        width: 100px;
+        position: relative;
+      
+    }
+    
+    
+    
+
+}
+@media (max-width: 768px) {
+    .img-fluid{
+        width: 100px;
+        position: relative;
+        
+    }
+  
+
+}
+
+@media (max-width: 1024px) {
+    
+    .img-fluid{
+        width: 50px;
+        position: relative;
+    }
+    
+    
+    
+    
+
+
+}
+
+
