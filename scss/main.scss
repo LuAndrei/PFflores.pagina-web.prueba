@@ -1,0 +1,148 @@
+@import "topnave";
+@import "productoh1";
+@import "box";
+@import "columnas";
+
+
+.grid {
+    
+    display: grid;
+    
+    grid-template-areas: 
+    "header header header"
+    "productos productos productos"
+    "servicios servicios servicios"
+    "footer footer footer";
+   
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+
+    grid-column-gap: 10px ;
+    grid-row-gap: 15px ;
+
+    height: 100vh; 
+   
+   
+}
+.border{ 
+    border: 1px  black;
+}
+header{
+    grid-area: header;
+    background-image: radial-gradient(ellipse, $bandera-trans );
+}
+#productos{
+    grid-area: productos;
+    
+    
+    
+}
+
+#servicios{
+    grid-area: servicios;
+    background-image: linear-gradient(to left, rgb(115, 112, 112), black, black );
+    
+}
+footer{
+    grid-area: footer;
+   
+}
+
+
+body{
+    background-color: $negro;
+    
+    
+}
+
+
+*{
+
+    background-color: $negro;
+    margin: 10px;
+    color: gray;
+    padding:0;
+   
+    
+    
+}
+
+@media (max-width: 320px) {
+    .img-fluid{
+        width: 100px;
+        position: relative;
+        margin-right: 70% ;
+       }
+    
+    .caja2{
+        margin-left: 10%; 
+    }
+    .topnav a{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0px 40px;
+        text-decoration: none;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .img-fluid{
+        width: 100px;
+        position: relative;
+        margin-left:42%;
+        
+    }
+    
+   
+    .topnav a{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0px 90px;
+        text-decoration: none;
+    }
+    
+  
+
+}
+
+@media (max-width: 1024px) {
+    
+    .img-fluid{
+        width: 100px;
+        position: relative;
+        margin-left: 45%;
+
+    }
+    
+    
+    .caja2{
+        margin-left: 10%;
+    }
+    .topnav a{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0px 60px;
+        text-decoration: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

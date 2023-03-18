@@ -1,0 +1,25 @@
+$cien: 100px;
+$veinte: 20px;
+$quini: 500px;
+
+
+
+h1 {
+    top: $veinte;
+    left: $quini;
+    height: $cien;
+    width: $cien;
+    background-color: $negro;
+    transition: height 1s, width 2s, background-color 2s, color 2s, transform 2s;
+
+
+    
+
+    &:hover{
+         height: $cien;
+         width: $cien;
+         background-color: $negro;
+         color: $blanco;
+         transform: skew(20deg, 10deg);
+}
+}
