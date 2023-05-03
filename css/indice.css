@@ -1,0 +1,21 @@
+*{
+    background-color: black;
+    z-index: 1;
+
+}
+
+body{
+    background-color: black;
+}
+
+p{
+    color: beige;
+}
+.otro__logo{
+    margin: 20px;
+}
+.logo__logo
+{
+    opacity: 60%;
+    
+}

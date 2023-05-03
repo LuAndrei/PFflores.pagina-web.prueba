@@ -4,81 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrate</title>
-
-    <link rel="stylesheet" type="text/css" href="./css/main7.css">
-    <link rel="icon" href="icon/lu.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario</title>
 </head>
 <body>
-    <div class="caja1"> <img src="logo/logo2.jpg" alt="" width="200px"></div>
-    <h2>Registrate</h2>
-    
-    <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
-        <fieldset>
-            <legend>Formulario de contacto</legend>
 
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" name="nombre" id="nombre"><br>
 
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" name="apellido" id="apellido"><br>
+<div class="transparent-form">
 
-        <label for="numero">Numero:</label><br>
-        <input type="number" name="numero"><br>
-
-        <label for="url">Url:</label><br>
-        <input type="url" name="url"><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email"><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password"><br>
-
-        <label for="color">color:</label><br>
-        <input type="color" name="color" id="color"><br>
+<img src="logo/logo2.jpg" class="avatar" alt="avatar">
 
 
 
 
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
-
-        
-
-        
-
-        <input type="submit" value="Enviar"/>
-        <input type="reset" value="Limpiar formulario"/>
+<form action="https://formsubmit.co/michrosales009@gmail.com" method="POST" style="max-width:500px;margin: auto;">
 
 
-            
-          
-        </fieldset>
-    
-    </form>
-    <footer class="border">
+<div class="form-input">
+<i class="fa fa-user icon"></i>
+<input type="text" class="input-form-html"  name="Nombre" placeholder="Nombre" required>
+</div>
 
-        <p>Sex Shop | Cordoba, Cordoba | Tel: 0303456
-            info@sexshop.com.ar | www.sexshop.com.ar
-            
-            © Todos los derechos Reservados
-        </p>
-       <div class="caja8"> <img src="logo/logo2.jpg" alt="" width="60px"></div>
-   
 
-    
-<p> seguinos en nuestras redes </p> 
 
-    <div class="caja3" >
-    <b><a href="https://www.facebook.com/" target=""><img src="imagenes/facebook.jpg" alt="" width="50px"  >facebook</a></b>
-    
-        
-        <b><a href="https://www.instagram.com/" target=""> <img src="imagenes/instragram.jpg" alt="" title="instagram" width="80px">Instagram</a></b>
+
+<div class="form-input">
+    <i class="fa fa-user icon"></i>
+    <input type="text" class="input-form-html"  name="Apellido" placeholder="Apellido" required>
     </div>
 
-</footer>
+
+    <div class="form-input">
+        <i class="fa fa-envelope icon"></i>
+        <input type="email" class="input-form-html"  name="Email" placeholder="Email" required>
+        </div>
+
+
+        <div class="form-input">
+            <i class="fa fa-comment icon"></i>
+<textarea class="input-form-html" name="comment" placeholder="Escribe tu comentario aqui"></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+
+        <button class="btn" name="submit" type="submit">Enviar Mensaje</button>
+
+</form>    
+
 </div>
+
+    
+<button><a href="index.html" class="boton1">Inicio</a></button>
 
 </body>
 </html>

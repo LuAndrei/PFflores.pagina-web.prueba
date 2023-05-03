@@ -4,26 +4,3 @@ $centrado: center;
 $no: none;
 $bandera-trans: rgb(36, 106, 210), rgb(187, 70, 158), rgb(250, 250, 250), rgb(187, 70, 158), rgb(36, 106, 210);
 
-.topnav{
-    background {
-        color: black;
-        image: linear-gradient(to left, $bandera-trans );
-    }
-    overflow: auto;
-     
-     
-    a{
-        text {
-            decoration: $no;
-            decoration: $no;
-            aling: $centrado;
-        }
-        display: inline-block;
-        color: $blanco;
-        
-        padding: 0px 105px;
-        
-        background: #5a396f;
-        transition:.3s;
-    }
-}

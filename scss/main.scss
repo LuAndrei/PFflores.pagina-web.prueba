@@ -69,46 +69,16 @@ body{
 }
 
 @media (max-width: 320px) {
-    .img-fluid{
-        width: 100px;
-        position: relative;
-        margin-right: 70% ;
-       }
+    
     
     .caja2{
         margin-left: 10%; 
     }
-    .topnav a{
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 0px 40px;
-        text-decoration: none;
-    }
-    
-}
-
-
-@media (max-width: 768px) {
-    .img-fluid{
-        width: 100px;
-        position: relative;
-        margin-left:42%;
-        
-    }
-    
    
-    .topnav a{
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 0px 90px;
-        text-decoration: none;
-    }
     
-  
-
 }
+
+
 
 @media (max-width: 1024px) {
     
@@ -123,14 +93,6 @@ body{
     .caja2{
         margin-left: 10%;
     }
-    .topnav a{
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 0px 60px;
-        text-decoration: none;
-    }
-    
     
 }
 
