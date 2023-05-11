@@ -1,8 +1,10 @@
-:root{
-  --soft-blue: hsl(231, 69%, 60%);
-  --soft-red: hsl(0, 94%, 66%);
-  --grayish-blue: hsl(229, 8%, 60%);
-  --very-dark-blue: hsl(229, 31%, 21%);
+
+* {
+  background-color: black;
+  margin: 6px;
+  color: gray;
+  padding: 0;
+  
 }
 .nav{
   height: 70px;
@@ -11,6 +13,20 @@
   align-items: center;
   justify-content: space-between;   
 }
+.nav__img{
+  object-fit: cover;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+
+
+
+.nav__img:hover {
+    transform: scale(1.2);
+   
+}
+
 
 .nav__input{
   display: none;
@@ -51,6 +67,19 @@ svg path{
 .nav__logo{
   grid-area: img;
   opacity: var(--logo-show);
+  border-radius:50%;
+  margin: 0;
+  object-fit: cover;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+
+
+
+.nav__logo:hover {
+    transform: scale(1.2);
+   
 }
 
 .nav__logo--hidden{
@@ -67,9 +96,26 @@ svg path{
 
   z-index: 100;
   cursor: pointer;
+  border-radius:50%;
+  margin: 0;
+  object-fit: cover;
+  transition: all .5s;
+  overflow: hidden;
 }
 
 
+
+
+.nav__toggle:hover {
+    transform: scale(1.2);
+   
+}
+
+.card-img-top{
+   border-radius:20%;
+  margin: 0;
+  background-color: #000;
+}
 
 .nav__content{
   --opacity: 0;
@@ -164,7 +210,10 @@ svg path{
 .hero__figure{
   grid-column: 2/3;
   grid-row: 1/2;
+  
 }
+
+
 
 
 
@@ -180,6 +229,7 @@ svg path{
 }
 
 .hero__paragraph{
+  
   line-height: 1.5;
   color: var(--grayish-blue);
   margin: 1.5rem 0 1rem;
@@ -187,47 +237,27 @@ svg path{
 
 
 
-.hero__cta{
-  font-weight: 500;
-  padding: 1em ;
-  background-color: var(--soft-blue);
-  text-decoration: none;
-  color: #fff;
-  border-radius: 6px;
 
-  
+
+
+
+h1{
+    color: rgb(48, 48, 49);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
 }
 
 
 
 
-h1 {
-  top: 20px;
-  left: 500px;
-  height: 100px;
-  width: 100px;
-  background-color: black;
-  transition: height 1s, width 2s, background-color 2s, color 2s, transform 2s;
-}
-h1:hover {
-  height: 100px;
-  width: 100px;
-  background-color: black;
-  color: white;
-  transform: skew(20deg, 10deg);
-}
-
-.caja2 {
-  display: inline-block;
-  margin-left: 40%;
-  
-}
 
 .caja5 {
   bottom: 200px;
   left: 0px;
   display: inline-block;
   margin: 0%;
+  
 }
 
 
@@ -258,12 +288,12 @@ h1:hover {
 }
 
 .border {
-  border: 1px black;
+  border: 1px rgb(251, 249, 249);
 }
 
 header {
   grid-area: header;
-  background-image: radial-gradient(ellipse, rgb(36, 106, 210), rgb(187, 70, 158), rgb(250, 250, 250), rgb(187, 70, 158), rgb(36, 106, 210));
+  background-image: black;
 }
 
 #productos {
@@ -283,12 +313,130 @@ body {
   background-color: black;
 }
 
-* {
-  background-color: black;
-  margin: 5px;
-  color: gray;
-  padding: 0;
+.animacion {
+  z-index: 1;
 }
+span.cuatro,
+span.dos,
+span.tres,
+span.uno {
+  border: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  animation: vuela 7s linear infinite normal both;
+}
+span.uno {
+  width: 100px;
+  height: 100px;
+  background-color: #E86BFF;
+  bottom: -100px;
+}
+span.dos {
+  width: 70px;
+  height: 70px;
+  background-color: #90BAFF;
+  bottom: -70px;
+}
+span.tres {
+  width: 50px;
+  height: 50px;
+  background-color: #FF5071;
+  bottom: -50px;
+}
+span.cuatro {
+  width: 20px;
+  height: 20px;
+  background-color: #67F3D4;
+  bottom: -20px;
+}
+@keyframes vuela {
+  from {
+      transform: rotate(0deg);
+      bottom: 0;
+      opacity: 0;
+  }
+  5% {
+      opacity: 1;
+  }
+  60% {
+      opacity: 1;
+  }
+  to {
+      transform: rotate(360deg);
+      bottom: calc(100% + 100px);
+      opacity: 0;
+  }
+}
+
+.animacion span:nth-child(1) {
+  left: 20%;
+  animation-delay: 3s;
+}
+.animacion span:nth-child(2) {
+  left: 50%;
+}
+.animacion span:nth-child(3) {
+  left: 35%;
+  animation-delay: 5s;
+}
+.animacion span:nth-child(4) {
+  left: 75%;
+  animation-delay: 1s;
+}
+.animacion span:nth-child(6) {
+  left: 85%;
+  animation-delay: 3s;
+}
+.animacion span:nth-child(7) {
+  left: 90%;
+  animation-delay: 5s;
+}
+.animacion span:nth-child(8) {
+  left: 65%;
+}
+.animacion span:nth-child(9) {
+  left: 60%;
+}
+.animacion span:nth-child(10) {
+  left: 75%;
+  animation-delay: 6s;
+}
+.animacion span:nth-child(11) {
+  left: 10%;
+}
+.animacion span:nth-child(12) {
+  left: 45%;
+  animation-delay: 3s;
+}
+
+.input-text{
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  }
+  
+  .icon {
+  padding: 15px;
+  background-color: rgb(59, 9, 76);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left: 70px;
+  
+  }
+  
+  .input_text_form{
+  padding: 15px;
+  width: 80%;
+  outline: none;
+  }
+  
+  
+  
+
 
 @media (max-width: 320px) {
   
@@ -408,5 +556,10 @@ body {
     text-align: center;
   }
 }
+
+
+
+
+
 
 /*# sourceMappingURL=main.css.map */

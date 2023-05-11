@@ -79,11 +79,32 @@
     
     }
 
-    .boton1{
-          width: 20%;
-            margin: 50px 0;
-            padding: 5px;
+  
+    .boton-agregar {
+      background-color: rgb(11, 11, 11);
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 5px;
+      border: none;
+      flex-grow: 1;
+    margin: 20px;
+    max-width: 300px;
+    border: 2px solid #333;
+    padding: 0 20px;
+  }
+  
+  
     
-        }
-        
+  
+  .boton-agregar:hover {
+      cursor: pointer;
+      border-color: #0a0a09;
+    box-shadow: 0px 0px 30px #350712
+  }
+  .boton-agregar:focus {
+      outline: none;
+      border-color: #f4ebed;
+    box-shadow: 0px 0px 30px #49062a
+  }      
     

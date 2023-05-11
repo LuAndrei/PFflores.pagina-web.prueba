@@ -36,6 +36,7 @@ body {
     background: var(--bg-menu);
     padding: 20px;
     transition: max-width .3s ease;
+    
 }
 
 .top-menu {
@@ -73,7 +74,7 @@ body {
     font-size: 35px;
 }
 
-/* INPUT BOX */
+
 
 .input-search {
     width: 100%;
@@ -101,7 +102,7 @@ body {
     display: none;
 }
 
-/* ENLACES MENU */
+
 
 .menu .enlace {
     width: 100%;
@@ -153,3 +154,15 @@ body {
 .menu-dashboard.open .menu .enlace span {
     opacity: 1;
 }
+
+.contenedor {
+    display: grid;
+    grid-template-areas: "header " "productos productos productos" ;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: 20% 70%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+  }
+
+  

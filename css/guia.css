@@ -1,0 +1,184 @@
+body {
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:consolas; 
+    }
+    
+    .container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    }
+    
+    
+    
+    .container .card {
+    position: relative;
+    cursor:pointer;
+    
+    }
+    
+    
+    
+    .container .card .face {
+    width: 298px;
+    height: 200px;
+    transition: 0.5s;
+    
+    }
+    
+    
+    .container .card .face.face1 {
+    position: relative;
+    background-color: rgb(47, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    z-index: 1;
+    transform:translateY(100px);
+    }
+    
+    
+    
+    .container .card:hover .face.face1 {
+    background: rgb(9, 0, 0);
+    transform: translateY(0);
+    
+    }
+    
+    .container .card .face.face1 .content {
+    opacity:0.2;
+    transition: 0.5s;
+    }
+    
+    
+    
+    .container .card:hover .face.face1 .content {
+    opacity:1;
+    
+    
+    }
+    
+    
+    .container .card .face.face1 .content img {
+    max-width: 300px;
+    height: 204px;
+    
+    
+    
+    }
+    
+    .container .card .face.face2 {
+    position: relative;
+    background: rgb(76, 44, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba (0,0,0,0.8);
+    transform:translateY(-100px); 
+    }
+    
+    
+    .container .card:hover .face.face2 {
+    
+    transform:translateY(0);
+    
+    
+    }
+    
+    
+    
+    .container .card .face.face2 .content p {
+    margin:0;
+    padding:0;
+    
+    
+    
+    }
+    
+    
+    .container .card .face.face2 .content a {
+    margin:15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    padding:5px;
+    border:1px solid darkred;
+    color: white;
+    
+    
+    
+    }
+    
+    
+    .container .card .face.face2 .content a:hover {
+    background: darkred;
+    color: white;
+    
+    
+    }
+    
+    
+    
+    .college {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    
+    }
+    
+    
+    h1 {
+    
+    color: white;
+    
+    
+    }
+
+    .boton-agregar {
+        background-color: rgb(11, 11, 11);
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        border: none;
+        flex-grow: 1;
+        margin: 20px;
+        max-width: 300px;
+        border: 2px solid #333;
+        padding: 0 20px;
+    }
+    
+    
+        
+    
+    .boton-agregar:hover {
+        cursor: pointer;
+        border-color: #0a0a09;
+        box-shadow: 0px 0px 30px #350712
+    }
+    .boton-agregar:focus {
+        outline: none;
+        border-color: #f4ebed;
+        box-shadow: 0px 0px 30px #49062a
+    }
+
+    .logo2{
+        border-radius: 100px;
+    }
+    
+    
