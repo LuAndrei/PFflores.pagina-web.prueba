@@ -18,11 +18,7 @@ logueo.addEventListener ("click", ()=>{
         if(result.isConfirmed){
             const usuario= document.getElementById("usuario").value;
             const password = document.getElementById("password").value;
-            Swal.fire({
-                title: "Sus datos no coinciden",
-                icon: "error",
-                confirmButtonText: "Aceptar",
-            })
+            
             if(usuario === usuarioAutorizado && password === passwordAutorizado){
                  window.location.href = "index.html";
              }

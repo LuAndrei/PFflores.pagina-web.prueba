@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 *{
-    background-color: rgb(107, 104, 104);
+    background-color: transparent;
     z-index: 1;
     margin: 0;
     padding: 0;
@@ -14,14 +14,13 @@
 
 .dibujo1{
   text-align: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  height: 100vh;
 }
 
 .sidebar{
   z-index: 100;
   top: 0;
-  background: #050000;
+  background: transparent;
   margin-top: 30px;
   padding-top: 10px;
   position: fixed;
@@ -49,13 +48,13 @@
 }
 
 .sidebar .profile_info h4{
-  color: #060606;
+  color: #fcfcfc;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 .sidebar a{
-  color: #0c0c0c;
+  color: #fcf9f9;
   display: block;
   width: 100%;
   line-height: 60px;
@@ -87,7 +86,7 @@ label #sidebar_btn{
 }
 
 label #sidebar_btn:hover{
-  color: #19B3D3;
+  color:transparent;
 }
 
 #check:checked ~ .sidebar{
@@ -106,7 +105,7 @@ label #sidebar_btn:hover{
 
 
 p{
-    color: white;
+    color: rgb(7, 7, 7);
     text-align: center;
 }
 
